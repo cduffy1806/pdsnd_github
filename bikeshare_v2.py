@@ -1,3 +1,5 @@
+# Interactive program allowing comparitve analysis of US city bikeshare data
+
 import time
 import pandas as pd
 import numpy as np
