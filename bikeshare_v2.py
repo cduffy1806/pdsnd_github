@@ -100,6 +100,9 @@ def load_data(city,month,day_of_week):
 
     return df
 
+def run_time(start_time):
+    print("\nThis took %s seconds." % (time.time() - start_time))
+
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
@@ -115,7 +118,7 @@ def time_stats(df):
     print('Most Popular Day of Week:', popular_dow)
     print('Most Popular start hour:', popular_start_hour)
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    run_time(start_time)
     print('-'*40)
 
 def station_stats(df):
@@ -137,7 +140,7 @@ def station_stats(df):
     pop_station_combo=df.groupby('station_combo').size().reset_index(name='trip_counts').sort_values('trip_counts',ascending=False)['station_combo'].iloc[0]
     print('The most common station combination: {}'.format(pop_station_combo))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    run_time(start_time)
     print('-'*40)
 
 
@@ -155,8 +158,10 @@ def trip_duration_stats(df):
     travel_time_mean = round(df['Trip Duration'].mean()/3600,2)
     print('The average trip duration was {} hours'.format(travel_time_mean))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    run_time(start_time)
     print('-'*40)
+
+
 
 
 def user_stats(df,city):
@@ -189,7 +194,7 @@ def user_stats(df,city):
         print('\nNo gender or birth year data available for {}'.format(city.title()))
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    run_time(start_time)
     print('-'*40)
 
 def display_data(df):
