@@ -15,3 +15,8 @@ node_modules
 
 # Ignore files related to API keys
 .env
+
+#Specific file names
+chicago.csv
+washington.csv
+new_york_city.csv
