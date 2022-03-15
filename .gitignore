@@ -1,1 +1,17 @@
 .github/**
+
+# Ignore Mac system files
+.DS_store
+
+# Ignore node_modules folder
+node_modules
+
+# Ignore all text & csv files
+*.txt
+*.csv
+
+# Ignore zip files
+*.zip
+
+# Ignore files related to API keys
+.env
