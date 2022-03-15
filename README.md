@@ -7,7 +7,7 @@
 Explore US Bikeshare Data
 
 ### Description
-In this project, data provided by Motivate, a bike share system provider for many major cities in the United States, is used to uncover bike share usage patterns. The system usage between three large cities(Chicago, New York City, and Washington, DC) is compared.
+In this project, data provided by Motivate, a bike share system provider for many major cities in the United States, is used to uncover bike share usage patterns. The system usage between three large cities(Chicago, New York City, and Washington, DC) is compared. Trip & user stats the primary focus. 
 
 ### Files used
 * chicago.csv
